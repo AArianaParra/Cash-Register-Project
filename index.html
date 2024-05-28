@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!--The X-UA-Compatible meta tag allows web authors to choose which version of Internet Explorer (IE) should render the page. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Cash Register project </title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="status-user-input-div">
+      <h1>Cash Register Project</h1>
+      <div id="status-div">
+        <div id="change-due"></div>
+      </div>
+      <div id="user-input-div">
+        <label id="user-input-label" for="">Enter cash from customer ($):<input type="number" name="cash" id="cash" required min="0"></label>
+        <button id="purchase-btn" name="purchase-btn">Purchase</button>
+      </div>
+    </div>
+    <div id="cash-register-div">
+      <div id="cash-register-container">
+        <div id="cash-register-plate">
+          <div id="cash-register-plate-tag">
+            <span id="price-tag"></span>
+          </div>
+        </div>
+        <div id="cash-register-joiner"></div>
+        <div id="cash-register-case">
+          <div id="cash-register-keys">    <div class="cash-register-key">9</div>
+                    <div class="cash-register-key">8</div>
+                              <div class="cash-register-key">7</div>
+                                        <div class="cash-register-key">+</div>                                              <div class="cash-register-key">6</div>                                     <div class="cash-register-key">5</div>
+               <div class="cash-register-key">4</div>           <div class="cash-register-key">-</div>
+                 <div class="cash-register-key">3</div>
+                 <div class="cash-register-key">2</div>
+                                        <div class="cash-register-key">1</div>                                              <div class="cash-register-key">*</div>                                     <div class="cash-register-key">C</div>
+               <div class="cash-register-key">0</div> 
+               <div class="cash-register-key">=</div> 
+                         <div class="cash-register-key">/</div>                   </div>
+                                         <div id="cash-register-change"></div>
+        </div>
+        <div id="cash-register-support">
+          <div id="cash-register-locker">
+        </div>
+      </div>
+    </div>
+     <script src="./script.js"></script>
+  </body>
+
+<html>

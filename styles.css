@@ -1,0 +1,236 @@
+:root {
+    --cash-register-color1: purple   ;
+    --cash-register-color2: white   ;
+  }
+  
+  * {
+    color: black;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  html {
+
+    font-family:  Times New Roman, Times, serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: rgb(226, 229, 220);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100vh; /*Optional*/
+    width: 100vw; /*Optional*/
+  }
+  
+  
+  
+  h1 {
+    font-size: 2.4rem;
+  }
+  
+  #status-user-input-div, #user-input-div {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  
+  #change-due {
+    font-size: 1.1em;
+  }
+  
+  label {
+    font-size: 1.4rem;
+  }
+  
+  input, button {
+    display: block;
+  
+  }
+  
+  input {
+    margin-top: 10px;
+    border: solid 2px;
+    height: 50%;
+    font-size: 0.7em;
+  } 
+  
+  button {
+    background: linear-gradient( rgba(255, 255, 0, 0.786) 15%, rgb(203, 203, 26));
+    border: outset rgb(186, 186, 82);
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 7px;
+  }
+  
+  button:hover {
+      background: linear-gradient( yellow 1%, rgb(154, 154, 19));
+  }
+  
+  /*Cash register*/
+  #cash-register-div {
+  display: flex;
+  align-content: center;
+  position: relative;
+  }
+  
+  #cash-register-container {
+    position: absolute;
+    left: -400px;
+    top: -100px;
+  }
+  
+  #cash-register-plate {
+    background: var(--cash-register-color1);
+    width: 200px;
+    height: 80px;
+    position:absolute;
+    top:0;
+    left: 25px;
+    display: flex;
+  }
+  
+  #cash-register-plate-tag {
+      background: var(--cash-register-color2);
+    width: 160px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+  }
+  
+  #price-tag {
+    margin: auto;
+    font-size: 1.1em;
+  }
+  
+  #cash-register-joiner {
+        background:  var(--cash-register-color1);
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top:80px;
+    left: 45px;
+  }
+  
+  #cash-register-case {
+     background: var(--cash-register-color1);
+      width: 300px;
+    height: 300px;
+    position: absolute;
+    top:110px;
+    left: 0;
+    border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  }
+   
+  #cash-register-keys {
+              display: grid;
+              grid-template-columns: auto auto auto auto;
+              
+              gap: 5px; /* Espacio entre las celdas */
+              width: 70px;
+  
+            position: absolute;
+            top: 35px;
+            left: 25px;
+  }
+  
+  .cash-register-key {
+    background: var(--cash-register-color2);
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+  
+  }
+  
+  #cash-register-change {
+      background:  var(--cash-register-color2);
+      width: 140px;
+      height: 250px;
+      position: absolute;
+      top: 25px;
+      left: 130px;
+      overflow-y: auto;
+  
+  }
+  
+  #cash-register-support {
+     background: var(--cash-register-color1);
+      width: 300px;
+    height: 35px;
+    position:absolute;
+    top:415px;
+    left: 0;
+    display: flex;
+  }
+  
+  #cash-register-locker {
+     background: rgb(226, 229, 220);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin: auto;
+  }
+  
+  .totalCid {
+    font-weight: bold;
+  }
+
+  .status {
+    font-weight: bold;
+  }
+  
+  .open {
+    color: green;
+  }
+  
+  .closed {
+    color: red;
+  }
+  
+  .insufficient {
+    color: orange;
+  }
+  
+  /*MEDIA*/
+  
+  @media screen and (max-width: 1200px) {
+   body {
+      flex-direction: column;
+      row-gap: 40px;
+   }
+  
+   h1 {
+     margin-top: 20px;
+   }
+   
+  #cash-register-container {
+    left: -20vw;
+    top: 5px;
+  }
+  }
+  
+  @media screen and (max-width: 480px) {
+   
+  #cash-register-container {
+    position: absolute;
+    left: 0vw;
+    top: 5px;
+  }
+  }
+  
+  @media screen and (max-width: 480px) {
+  
+  #cash-register-container {
+    left: -40vw;
+    top: 5px;
+  }
+  }
