@@ -85,7 +85,7 @@
   #cash-register-container {
     position: absolute;
     left: -400px;
-    top: -100px;
+    top: -90px;
   }
   
   #cash-register-plate {
@@ -185,19 +185,19 @@
   }
 
   .status {
-    font-weight: bold;
+    font-weight: bold important;
   }
   
   .open {
-    color: green;
+    color: green  important;
   }
   
   .closed {
-    color: red;
+    color: red important;
   }
   
   .insufficient {
-    color: orange;
+    color: orange important;
   }
   
   /*MEDIA*/

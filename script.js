@@ -128,6 +128,7 @@ const calcChange = (changeToGive, cid, currency) => {
    updateChangeResultStatus(cid); 
    cid = calculateCid(cid, cid);
    updateChangeCid(cid);
+document.getElementById("cash-register-container").style.top = "-30px";
 }
  else {
     let changeResult = [];
